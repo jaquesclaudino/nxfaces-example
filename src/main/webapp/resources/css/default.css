@@ -1,0 +1,212 @@
+/* --------- PRIMEFACES OVERLOAD --------- */
+
+.ui-layout-north {
+    z-index:20 !important;
+    overflow:visible !important;
+}
+
+.ui-layout-north .ui-layout-unit-content {
+    overflow:visible !important;
+}
+
+.ui-datatable-header {
+    padding: 2px !important;
+    text-align: left !important;
+    background-color: #f2f1f1 !important;
+    border-color: silver !important;
+}
+
+.ui-treetable-header {
+    padding: 2px !important;
+    text-align: left !important;
+    background-color: #f2f1f1 !important;
+    border-color: silver !important;
+}
+
+.ui-dialog-title {
+    font-size: 16px !important;
+}
+
+.ui-dialog.ui-widget-content .ui-dialog-titlebar-close {
+    margin-top: 3px;
+}
+
+/* relative column widths */
+.ui-datatable table {
+    table-layout: auto !important;
+}
+
+/* datagrid without border */
+.ui-datagrid-content {
+    border: none !important;
+} 
+
+/* datagrid without space on the top */
+.ui-datagrid-column {
+    padding-top: 0px !important;
+    padding-left: 0px !important;
+    padding-right: 6px !important;
+    padding-bottom: 6px !important;
+}
+
+/* that was 1px over the selected item */
+.ui-menu {
+    margin: 0px !important;
+}
+
+.ui-menuitem {
+    margin: 0px !important;    
+}
+
+/* --------- LAYOUT --------- */
+
+.div-top {
+    display: table;
+    width: 100%;
+    background-color: #253f63;
+    background: -webkit-gradient(linear, left top, left bottom, from(#15153f), to(#344f74)) repeat-X;
+    background: -moz-linear-gradient(270deg, #15153f, #344f74); 
+    color: white;
+}
+
+.div-bottom {
+    display: table;
+    width: 100%;
+    background-color: #F1F1F1;
+    background: -webkit-gradient(linear, left top, left bottom, from(#F1F1F1), to(#FFF)) repeat-X;
+    background: -moz-linear-gradient(270deg, #F1F1F1, #FFF);
+    color: gray;
+    padding-top: 5px;
+    padding-bottom: 5px;    
+    position: fixed;
+    bottom: 0px;
+}
+
+.div-bottom-space {
+    height: 20px;
+}
+
+.div-content {
+    padding-top: 0.75em;
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+    min-height: 300px;
+}
+
+/* --------- CUSTOM --------- */
+
+body, table, div, button, select,option {
+    font-size: 12px;
+    font-family: Verdana, "Verdana CE",  Arial, "Arial CE", "Lucida Grande CE", lucida, "Helvetica CE", sans-serif;
+}
+
+.div-painel {
+    display: inline-block; 
+    padding-bottom: 0.45em;
+    width: 25em;
+}
+
+.ajax-status {
+    width:16px; 
+    height:16px; 
+    position:absolute; 
+    z-index:99;
+    left:60px; 
+    top:12px;
+}
+
+.div-top-label {
+    display: inline;
+}
+
+.text-bold {
+    font-weight: bold;
+}
+
+.text-bold-red {
+    font-weight: bold;
+    color: red;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.align-top {
+    vertical-align: top;
+}
+
+.favicon {
+    width: 32px;
+    height: 32px;
+}
+
+.div-color-table {
+    display: table; 
+    width: 72px;
+}
+
+.div-color-cell {
+    display: table-cell;
+    border: 1px solid silver;
+    width: 24px;
+    height: 24px;
+}
+
+.table-none {
+    padding: 0px;
+    border: 0px;
+    margin: 0px;
+}
+
+/* --------- MOBILE --------- */
+
+@media only screen and (max-width: 980px) {
+    body, table, div, button {
+        font-size: 2rem;
+    }
+    
+    .div-painel {
+        width: 19em;
+    }
+    
+    .div-bottom {
+        display: none;
+    }
+    
+    .div-bottom-space {
+        display: none;
+    }
+    
+    .ajax-status {
+        left: 115px; 
+        top: 7px;
+    }
+    
+    .div-top-label {
+        display: none;
+    }
+    
+    .ui-menuitem {
+        padding-top: 0.3em !important;    
+        padding-bottom: 0.3em !important;    
+    }
+    
+    .favicon {
+        width: 48px;
+        height: 48px;
+    }
+    
+    .text-log {
+        font-size: 1.0rem;
+    }
+    
+    .div-color-table {
+        width: 96px;
+    }
+
+    .div-color-cell {
+        width: 32px;
+        height: 32px;
+    }
+}

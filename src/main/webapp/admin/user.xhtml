@@ -1,0 +1,47 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE composition PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<ui:composition template="../public/default.xhtml"
+                xmlns="http://www.w3.org/1999/xhtml"
+                xmlns:ui="http://java.sun.com/jsf/facelets"
+                xmlns:p="http://primefaces.org/ui"
+                xmlns:nxfaces="http://xmlns.jcp.org/jsf/composite/nxfaces"
+                xmlns:h="http://xmlns.jcp.org/jsf/html"
+                xmlns:f="http://xmlns.jcp.org/jsf/core">
+
+    <ui:define name="content">
+        <h:form>
+            <nxfaces:topic value="#{b.User}" prefix="#{b.Administration}"/>
+            
+            <nxfaces:crudToolbar mb="#{userMB}"/>
+
+            <nxfaces:crudForm mb="#{userMB}">
+                <h:panelGrid columns="2">
+                    <p:outputLabel for="name" value="#{b.Name}"/>
+                    <p:inputText id="name" value="#{userMB.entity.name}" size="30" required="true"/>
+                    
+                    <p:outputLabel for="login" value="#{b.Login}"/>
+                    <p:inputText id="login" value="#{userMB.entity.login}" required="true"/>
+                    
+                    <p:outputLabel for="group" value="#{b.Group}"/>
+                    <p:selectOneMenu id="group" value="#{userMB.entity.groupName}">
+                        <f:selectItem itemValue="admin" itemLabel="#{b.Administrator}"/>
+                        <f:selectItem itemValue="user" itemLabel="#{b.User}"/>
+                    </p:selectOneMenu>
+                </h:panelGrid>
+            </nxfaces:crudForm>
+            
+            <nxfaces:crudTable mb="#{userMB}">
+                <p:column headerText="#{b.Name}">
+                    #{item.name}
+                </p:column>
+                <p:column headerText="#{b.Login}">
+                    #{item.login}
+                </p:column>
+                <p:column headerText="#{b.Group}">
+                    #{item.groupName}
+                </p:column>
+            </nxfaces:crudTable>
+        </h:form>
+    </ui:define>
+
+</ui:composition>
