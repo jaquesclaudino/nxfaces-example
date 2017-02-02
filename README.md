@@ -1,3 +1,7 @@
+# Example using nxfaces
+
+<img src="doc/screenshot.png"/>
+
 # apache-tomee:
 - copy lib/objectdb-jee.jar to apache-tomee-plus-7.0.2/lib
 
