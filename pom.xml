@@ -6,7 +6,7 @@
     <artifactId>nxfaces-example</artifactId>   
     <name>nxfaces-example</name>
     <packaging>war</packaging>       
-    <version>0.0.1</version>
+    <version>0.0.2</version>
 
     <properties>
         <endorsed.dir>${project.build.directory}/endorsed</endorsed.dir>
@@ -31,7 +31,7 @@
         <dependency>
             <groupId>org.primefaces</groupId>
             <artifactId>primefaces</artifactId>
-            <version>5.3</version>
+            <version>6.1</version>
         </dependency>
         <dependency>  
             <groupId>org.primefaces.themes</groupId>  
@@ -41,7 +41,7 @@
         <dependency>
             <groupId>com.nexten</groupId>
             <artifactId>nxfaces</artifactId>
-            <version>0.0.7</version>
+            <version>0.0.10</version>
         </dependency>
     </dependencies>
 

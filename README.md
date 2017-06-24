@@ -47,3 +47,6 @@ objectdbRealm {
 			<property name="group-name-column" value="groupName"></property>
 		</auth-realm>
 ~~~~
+
+# nxfaces-example login:
+If the database is empty on deploying, the default user=admin and password=1 will be inserted.
