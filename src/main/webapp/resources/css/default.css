@@ -162,12 +162,11 @@ body, table, div, button, select,option {
 /* --------- MOBILE --------- */
 
 @media only screen and (max-width: 980px) {
-    body, table, div, button {
-        font-size: 2rem;
-    }
-    
-    .div-painel {
-        width: 19em;
+    .ui-datatable thead th, 
+    .ui-datatable tbody td, 
+    .ui-datatable tfoot td, 
+    .ui-datatable tfoot th {
+        padding: 4px !important;
     }
     
     .div-bottom {
@@ -178,35 +177,8 @@ body, table, div, button, select,option {
         display: none;
     }
     
-    .ajax-status {
-        left: 115px; 
-        top: 7px;
-    }
-    
     .div-top-label {
         display: none;
     }
     
-    .ui-menuitem {
-        padding-top: 0.3em !important;    
-        padding-bottom: 0.3em !important;    
-    }
-    
-    .favicon {
-        width: 48px;
-        height: 48px;
-    }
-    
-    .text-log {
-        font-size: 1.0rem;
-    }
-    
-    .div-color-table {
-        width: 96px;
-    }
-
-    .div-color-cell {
-        width: 32px;
-        height: 32px;
-    }
 }
