@@ -6,7 +6,7 @@
     <artifactId>nxfaces-example</artifactId>   
     <name>nxfaces-example</name>
     <packaging>war</packaging>       
-    <version>0.0.3</version>
+    <version>0.0.4</version>
 
     <properties>
         <endorsed.dir>${project.build.directory}/endorsed</endorsed.dir>
@@ -33,7 +33,7 @@
         <dependency>
             <groupId>com.nexten</groupId>
             <artifactId>nxfaces</artifactId>
-            <version>0.0.12</version>
+            <version>0.0.13</version>
         </dependency>
     </dependencies>
 
